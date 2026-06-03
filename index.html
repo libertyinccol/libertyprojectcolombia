@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andean Airways | Connecting the Americas</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#222;
+}
+
+header{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:700px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#0066cc;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#004f9e;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.fleet{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.aircraft{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.aircraft img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.aircraft-content{
+    padding:20px;
+}
+
+.stats{
+    background:#003366;
+    color:white;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    text-align:center;
+    gap:20px;
+}
+
+.stat h3{
+    font-size:40px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#001933;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:20px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+<div class="logo">Andean Airways</div>
+
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#fleet">Fleet</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h1>Connecting Colombia & The Americas</h1>
+
+<p>
+Reliable regional aviation solutions, charter services,
+cargo transportation and pilot training across the continent.
+</p>
+
+<a href="#contact" class="btn">Book a Charter</a>
+</div>
+
+</header>
+
+<section id="services">
+
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Professional aviation solutions tailored to your needs.</p>
+</div>
+
+<div class="services">
+
+<div class="card">
+<h3>Charter Flights</h3>
+<p>
+Private and executive flights with flexible scheduling
+throughout Colombia and Latin America.
+</p>
+</div>
+
+<div class="card">
+<h3>Cargo Operations</h3>
+<p>
+Safe and efficient transport of critical cargo to regional
+and remote destinations.
+</p>
+</div>
+
+<div class="card">
+<h3>Pilot Training</h3>
+<p>
+Professional flight instruction for future aviators,
+including VFR and IFR programs.
+</p>
+</div>
+
+<div class="card">
+<h3>Aerial Services</h3>
+<p>
+Photography, surveying, inspection and special aviation
+missions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="fleet">
+
+<div class="section-title">
+<h2>Fleet</h2>
+<p>Modern and versatile aircraft for every mission.</p>
+</div>
+
+<div class="fleet">
+
+<div class="aircraft">
+<img src="https://images.unsplash.com/photo-1544016768-982d1554f0b9?auto=format&fit=crop&w=1200&q=80">
+<div class="aircraft-content">
+<h3>Cessna Caravan</h3>
+<p>
+Reliable utility aircraft for passenger and cargo operations.
+</p>
+</div>
+</div>
+
+<div class="aircraft">
+<img src="https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1200&q=80">
+<div class="aircraft-content">
+<h3>King Air 350</h3>
+<p>
+Executive and regional transport with outstanding performance.
+</p>
+</div>
+</div>
+
+<div class="aircraft">
+<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80">
+<div class="aircraft-content">
+<h3>Savannah STOL</h3>
+<p>
+Ideal for remote airstrips and special missions.
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stats-grid">
+
+<div class="stat">
+<h3>25+</h3>
+<p>Destinations</p>
+</div>
+
+<div class="stat">
+<h3>15</h3>
+<p>Aircraft</p>
+</div>
+
+<div class="stat">
+<h3>50,000+</h3>
+<p>Flight Hours</p>
+</div>
+
+<div class="stat">
+<h3>99.8%</h3>
+<p>Dispatch Reliability</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="section-title">
+<h2>About Us</h2>
+</div>
+
+<p style="max-width:1000px;margin:auto;text-align:center;font-size:18px;line-height:1.8;">
+Andean Airways is a regional aviation company dedicated to
+connecting communities, businesses, and travelers across
+Colombia and the Americas. Our commitment to safety,
+professionalism, and operational excellence allows us to
+deliver reliable aviation services while maintaining the
+highest industry standards.
+</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+</div>
+
+<p>Email: info@andeanairways.com</p>
+<p>Operations: +57 300 000 0000</p>
+<p>Bogotá, Colombia</p>
+
+<br>
+
+<a href="mailto:info@andeanairways.com" class="btn">
+Request Information
+</a>
+
+</section>
+
+<footer>
+© 2026 Andean Airways. All Rights Reserved.
+</footer>
+
+</body>
+</html>
